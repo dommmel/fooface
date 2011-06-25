@@ -1,10 +1,13 @@
+# Pretty much verything you see here is copied from https://raw.github.com/appoxy/mini_fb
+
 require "fooface/version"
+require 'json' unless defined? JSON
+require 'rest_client'
+require 'logger'
+require 'openssl'
 
 module Fooface
-  require 'json' unless defined? JSON
-  require 'rest_client'
-  require 'logger'
-  require 'openssl'
+  
 
     @@logging = true
     @@log = Logger.new(STDOUT)
@@ -15,7 +18,6 @@ module Fooface
     #   - type: eg: feed, home, etc
     #   - metadata: to include metadata in response. true/false
     #   - params: Any additional parameters you would like to submit
-    # Author: https://github.com/appoxy/mini_fb/blob/master/lib/mini_fb.rb
 
     def self.graph_base
       "https://graph.facebook.com/"
