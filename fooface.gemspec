@@ -5,11 +5,11 @@ require "fooface/version"
 Gem::Specification.new do |s|
   s.name        = "fooface"
   s.version     = Fooface::VERSION
-  s.authors     = ["dom"]
+  s.authors     = ["Dominik"]
   s.email       = ["dommmelcheck@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Tiny tiny facebook library}
+  s.description = %q{Subset of mini_fb}
 
   s.rubyforge_project = "fooface"
 
@@ -21,6 +21,5 @@ Gem::Specification.new do |s|
   s.add_dependency  'oa-oauth', '0.1.6'
   s.add_dependency  'json'
   s.add_dependency  'rest-client'
-  
   
 end
